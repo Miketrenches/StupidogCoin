@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>$Dog — Stupid Dog Coin</title>
+    <meta name="description" content="it could all be so simple." />
+
+    <meta property="og:title" content="$Dog — Stupid Dog Coin" />
+    <meta property="og:description" content="it could all be so simple." />
+    <meta property="og:image" content="assets/banner.png" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="assets/banner.png" />
+
+    <link rel="icon" type="image/png" href="assets/coin.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="sky">
+      <div class="cloud cloud--1"></div>
+      <div class="cloud cloud--2"></div>
+      <div class="cloud cloud--3"></div>
+      <div class="cloud cloud--4"></div>
+      <div class="cloud cloud--5"></div>
+    </div>
+
+    <div class="audio" id="audio">
+      <div class="audio__panel" id="audio-panel" aria-hidden="true">
+        <span class="audio__low" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="14" height="14"><path d="M5 9h3l5-4v14l-5-4H5z" fill="currentColor"/></svg>
+        </span>
+        <input
+          id="volume"
+          class="audio__slider"
+          type="range"
+          min="0"
+          max="100"
+          step="1"
+          value="22"
+          aria-label="Volume"
+        />
+        <span class="audio__high" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path d="M5 9h3l5-4v14l-5-4H5z" fill="currentColor"/><path d="M16 8a5 5 0 0 1 0 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M19 5a9 9 0 0 1 0 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </span>
+      </div>
+      <button id="music" class="music" type="button" aria-label="Music" aria-expanded="false" title="Music">
+        <svg class="music__icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M9 18V6l11-2v12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="6.5" cy="18" r="2.5" fill="currentColor"/>
+          <circle cx="17.5" cy="16" r="2.5" fill="currentColor"/>
+        </svg>
+      </button>
+    </div>
+    <div id="player" aria-hidden="true"></div>
+
+    <header class="topnav" aria-label="Primary">
+      <a class="topnav__link" href="#" target="_blank" rel="noopener">community</a>
+      <a class="topnav__link" href="#" target="_blank" rel="noopener">thesis</a>
+      <a class="topnav__link" href="#" target="_blank" rel="noopener">dexscreener</a>
+    </header>
+
+    <main class="page">
+      <div class="middle">
+        <section class="hero">
+          <img class="coin" src="assets/coin.png" alt="Stupid Dog Coin" />
+          <h1 class="tagline">
+            <img src="assets/tagline.png" alt="it could all be so simple." />
+          </h1>
+        </section>
+
+      </div>
+
+      <footer class="foot">no utility. no roadmap. just a stupid dog.</footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
